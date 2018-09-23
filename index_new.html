@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto" rel="stylesheet">
+  <link href="font/css/open-iconic-foundation.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>Sales Chain</title>
+</head>
+<body>
+  <div class="container">
+    <div class="mobile_menu row">
+      <div class="logotype_m fix_mb_menu">
+        <div class="logo_m">
+          <img src="img/logo.png" alt="логотип">
+        </div>
+        <div class="logo_title_m">
+          <span>сейлз чейн</span>
+          автолизинг и страхование
+        </div>
+      </div>
+      <div class="close_menu">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="box_menu">
+        <div class="m_menu_list">
+          <li>Мониторинг лидов</li>
+          <li>Отправить заявку</li>
+          <li>Чат с платформой</li>
+        </div>
+      </div>
+    </div>
+    <div class="row mobile_header">
+      <div class="logotype_m">
+        <div class="logo_m">
+          <img src="img/logo.png" alt="логотип">
+        </div>
+        <div class="logo_title_m">
+          <span>сейлз чейн</span>
+          автолизинг и страхование
+        </div>
+      </div>
+      <div class="mobile_menu_btn">
+        <span class="fi-menu align-middle"></span>
+      </div>
+    </div>
+    <form class="row formReg" id="fist_step_reg">
+        <div class="col-12 head_step">I этап регистрации</div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="idAgent" class="form-control chng_fc_onestep" required placeholder="ID агента">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="secName" class="form-control chng_fc_onestep" required placeholder="Фамилия">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="firstName" class="form-control chng_fc_onestep" required placeholder="Имя">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="thidName" class="form-control chng_fc_onestep" required placeholder="Отчество">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="mobNum" class="form-control chng_fc_onestep" required placeholder="Телефон">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="email" id="mailPerson" class="form-control chng_fc_onestep" required placeholder="Email">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="loginPerson" class="form-control chng_fc_onestep" required placeholder="Логин">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="password" id="passwperson" class="form-control chng_fc_onestep" required placeholder="Пароль">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="password" id="confirmPasswPerson" class="form-control chng_fc_onestep" required placeholder="Подтверждение пароля">
+        </div>
+
+      <div class="col-12 form-check">
+        <input type="checkbox" id="ofertCheck" class="form-check-input" required>
+        <label class="form-check-label" for="ofertCheck" >Я ознакомлен с офертой</label>
+      </div>
+      <button class="btn btn-primary" id="sendFistStepReg" type="submit">Отправить</button>
+    </form>
+
+    <form class="row formReg">
+        <div class="col-12 head_step">II этап регистрации</div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="dealer_cntr" class="form-control" required placeholder="Дилерский центр">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <label class="lbl_mlt_slct">
+              Марка
+              <select name="Category" id="demo" multiple required>
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Citroen">Citroen</option>
+                <option value="Ford">Ford</option>
+                <option value="Honda">Honda</option>
+                <option value="Jaguar">Jaguar</option>
+                <option value="Land Rover">Land Rover</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Mini">Mini</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Volvo">Volvo</option>
+              </select>
+          </label>
+        </div>
+
+        <div class="col-12 head_step">Паспортные данные</div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="serial_psprt" class="form-control" required placeholder="Серия">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="num_psprt" class="form-control" required placeholder="Номер">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input id="date_issuing" class="datepicker form-control" required placeholder="Дата выдачи"/>
+          <!-- <input type="text" id="date_issuing" class="form-control unstyled" required placeholder="Дата выдачи"> -->
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="issued_by" class="form-control" required placeholder="Кем выдан">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="code_subdiv" class="form-control" required placeholder="Код подразделения">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input id="brthd" class="datepicker_brthd form-control" required placeholder="Дата рождения"/>
+          <!-- <input type="text" id="brthd" required placeholder="Дата рождения"> -->
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="city_birthd" class="form-control" required placeholder="Место рождения">
+        </div>
+
+        <div class="col-12 head_step">Регистрация</div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <div class="input-group">
+            <select class="custom-select" id="region_fdr" required>
+              <option selected>Регион федерации...</option>
+              <option value="Адыгея">Республика Адыгея</option>
+            	<option value="Алтай">Республика Алтай </option>
+            	<option value="Башкортостан">Республика Башкортостан </option>
+            	<option value="Бурятия">Республика Бурятия </option>
+            	<option value="Дагестан">Республика Дагестан </option>
+            	<option value="Ингушетия">Республика Ингушетия </option>
+            	<option value="Кабардино-Балкария">Кабардино-Балкарская </br> Республика</option>
+            	<option value="Калмыкия">Республика Калмыкия </option>
+            	<option value="Карачаево-Черкессия">Карачаево-Черкесская </br> Республика</option>
+            	<option value="Карелия">Республика Карелия </option>
+            	<option value="Коми">Республика Коми </option>
+            	<option value="Марий Эл">Республика Марий Эл </option>
+            	<option value="Мордовия">Республика Мордовия</option>
+            	<option value="Саха (Якутия)">Республика Саха (Якутия) </option>
+            	<option value="Северная Осетия - Алания">Республика Северная Осетия </br> - Алания </option>
+            	<option value="Татарстан">Республика Татарстан</option>
+            	<option value="Тыва">Республика Тыва </option>
+            	<option value="Удмуртская">Удмуртская Республика </option>
+            	<option value="Хакасия">Республика Хакасия </option>
+            	<option value="Чеченская">Чеченская Республика</option>
+            	<option value="Чувашская Республика">Чувашская Республика</option>
+            	<option value="Алтайский край">Алтайский край</option>
+            	<option value="Забайкальский край">Забайкальский край</option>
+            	<option value="Камчатский край">Камчатский край</option>
+            	<option value="Краснодарский край">Краснодарский край</option>
+            	<option value="Красноярский край">Красноярский край</option>
+            	<option value="Пермский край">Пермский край</option>
+            	<option value="Приморский край">Приморский край</option>
+            	<option value="Ставропольский край">Ставропольский край</option>
+            	<option value="Хабаровский край">Хабаровский край</option>
+            	<option value="Амурская область">Амурская область</option>
+            	<option value="Москва">Москва</option>
+            	<option value="Санкт-Петербург">Санкт-Петербург</option>
+            	<option value="Еврейская АО">Еврейская АО</option>
+            	<option value="Ненецкий АО">Ненецкий АО</option>
+            	<option value="Ханты-Мансийский АО">Ханты-Мансийский АО</option>
+            	<option value="Чукотский АО">Чукотский АО</option>
+            	<option value="Ямало-Ненецкий АО">Ямало-Ненецкий АО</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <div class="input-group">
+            <select class="custom-select" id="area" required>
+              <option selected>Область...</option>
+              <option value="Архангельская область">Архангельская область</option>
+            	<option value="Астраханская область">Астраханская область</option>
+            	<option value="Белгородская область">Белгородская область</option>
+            	<option value="Брянская область">Брянская область </option>
+            	<option value="Владимирская область">Владимирская область </option>
+            	<option value="Волгоградская область">Волгоградская область </option>
+            	<option value="Вологодская область">Вологодская область </option>
+            	<option value="Воронежская область">Воронежская область </option>
+            	<option value="Ивановская область">Ивановская область </option>
+            	<option value="Иркутская область">Иркутская область </option>
+            	<option value="Калининградская область">Калининградская область</option>
+            	<option value="Калужская область">Калужская область </option>
+            	<option value="Кемеровская область">Кемеровская область </option>
+            	<option value="Кировская область">Кировская область </option>
+            	<option value="Костромская область">Костромская область </option>
+            	<option value="Курганская область">Курганская область </option>
+            	<option value="Курская область">Курская область </option>
+            	<option value="Ленинградская область">Ленинградская область </option>
+            	<option value="Липецкая область">Липецкая область </option>
+            	<option value="Магаданская область">Магаданская область</option>
+            	<option value="Московская область">Московская область </option>
+            	<option value="Мурманская область">Мурманская область </option>
+            	<option value="Нижегородская область">Нижегородская область </option>
+            	<option value="Новгородская область">Новгородская область </option>
+            	<option value="Новосибирская область">Новосибирская область </option>
+            	<option value="Омская область">Омская область</option>
+            	<option value="Оренбургская область">Оренбургская область </option>
+            	<option value="Орловская область">Орловская область </option>
+            	<option value="Пензенская область">Пензенская область </option>
+            	<option value="Псковская область">Псковская область </option>
+            	<option value="Ростовская область">Ростовская область </option>
+            	<option value="Рязанская область">Рязанская область </option>
+            	<option value="Самарская область">Самарская область </option>
+            	<option value="Саратовская область">Саратовская область </option>
+            	<option value="Сахалинская область">Сахалинская область </option>
+            	<option value="Свердловская область">Свердловская область </option>
+            	<option value="Смоленская область">Смоленская область </option>
+            	<option value="Тамбовская область">Тамбовская область </option>
+            	<option value="Тверская область">Тверская область </option>
+            	<option value="Томская область">Томская область </option>
+            	<option value="Тульская область">Тульская область</option>
+            	<option value="Тюменская область">Тюменская область </option>
+            	<option value="Ульяновская область">Ульяновская область </option>
+            	<option value="Челябинская область">Челябинская область </option>
+            	<option value="Ярославская область">Ярославская область</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="zone" class="form-control" required placeholder="Район">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="city_m" class="form-control" required placeholder="Город, муниципальное образование">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <div class="input-group">
+            <select class="custom-select" id="street" required>
+              <option selected>Улица/переулок/проезд</option>
+              <option value="1">Улица</option>
+              <option value="2">Переулок</option>
+              <option value="3">Проезд</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="house" class="form-control" required placeholder="Дом">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <div class="input-group">
+            <select class="custom-select" id="build" required>
+              <option selected>Строение/корпус</option>
+              <option value="1">Строение</option>
+              <option value="2">Корпус</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="flat" class="form-control" required placeholder="Квартира">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="number" min="6" max="6" id="postcode" required class="form-control" placeholder="Почтовый индекс">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="number" id="snils" class="form-control" required placeholder="СНИЛС">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="number" id="inn" class="form-control" required placeholder="ИНН">
+        </div>
+
+        <div class="col-12 head_step">Банковские реквизиты</div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="number" id="bic_bank" class="form-control" required placeholder="БИК Банка">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="text" id="name_bank" class="form-control" required placeholder="Наименование банка">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="number" id="cor_bank" class="form-control" required placeholder="Кор счет банка">
+        </div>
+
+        <div class="col-md-6 col-lg-4 row_col ch_orient">
+          <input type="number" id="check_account" class="form-control" required placeholder="Расчетный счет">
+        </div>
+
+        <div class="col-12 form-check chk_dwn">
+          <div class="wrap_row_confirem">
+            <input type="checkbox" id="conf_person_date" required class="form-check-input ">
+            <label class="form-check-label" for="conf_person_date">Я подтверждаю достоверность введенных личных данных, в том числе реквизитов</label>
+          </div>
+        </div>
+
+        <div class="col-12 chk_dwn form-check ">
+          <input type="checkbox" id="agree_person_date" required class="form-check-input">
+          <label class="form-check-label" for="agree_person_date">Я согласен(сна) на обработку персональных данных</label>
+        </div>
+
+        <div class="col-12 form-group">
+          <div class="lbl_chse_file">Селфи с фото паспорта и владельца с приложенной на листке датой и временем до минуты</div>
+          <label class="btn btn-default cstm_btn_chs"> выбрать <input type="file" required hidden> </label>
+        </div>
+
+        <div class="col-12 form-group">
+          <div class="lbl_chse_file">Цветная копия паспорта (разворот 1 страницы и регистрации)</div>
+          <label class="btn btn-default cstm_btn_chs"> выбрать <input type="file" required hidden> </label>
+        </div>
+
+      <button class="btn btn-primary" id="sendSecondStepReg" type="submit" disabled>Отправить</button>
+    </form>
+
+    <div class="row fot_contacts">
+      <div class="col-md-6 col_contacts ch_orient">
+        <h6 class="hdContact">Контакты</h6>
+        <p class="text_adres">Адрес: 119017, г.Москва, Пыжевский переулок, д.5, стр.1</p>
+        <p>Телефон: +7(905)557-39-42</p>
+        <p>Почта: info@saleschain.tu</p>
+        <p>www.saleschain.ru</p>
+      </div>
+      <div class="col-md-6 container_icons ch_orient">
+        <div class="row_icon">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+        <div class="row_icon">
+          <a href="#"><i class="fab fa-vk"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-odnoklassniki-square"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <footer class="foter_reg " id="contPhone">
+        +7 (905) 557-39-42
+      </footer>
+    </div>
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+
+  <!-- Mobiscroll JS and CSS Includes -->
+  <link href="css/mobiscroll.jquery.min.css" rel="stylesheet" />
+  <script src="js/mobiscroll.jquery.min.js"></script>
+
+  <script>
+      $(function () {
+        // Mobiscroll Select initialization
+        $('#demo').mobiscroll().select({
+            minWidth: 200         // More info about minWidth: https://docs.mobiscroll.com/4-3-2/select#opt-minWidth
+        });
+        // Mobiscroll Select initialization
+        $('#group').mobiscroll().select({
+            label: 'Name',        // More info about label: https://docs.mobiscroll.com/4-3-2/select#opt-label
+            width: [50, 270],     // More info about width: https://docs.mobiscroll.com/4-3-2/select#opt-width
+            group: true,          // More info about group: https://docs.mobiscroll.com/4-3-2/select#opt-group
+            groupLabel: '&nbsp;'  // More info about groupLabel: https://docs.mobiscroll.com/4-3-2/select#opt-groupLabel
+        });
+      });
+      // вызов плагина для устанвоки даты
+      $('.datepicker').datepicker({ format: 'dd.mm.yyyy' });
+      $('.datepicker_brthd').datepicker({ format: 'dd.mm.yyyy' });
+
+  </script>
+</body>
+</html>

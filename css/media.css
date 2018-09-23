@@ -1,0 +1,40 @@
+@media (min-width: 320px) and (orientation:landscape) {
+  input#demo_dummy {
+    width: 84vw;
+  }
+}
+@media (min-width: 375px) and (orientation:portrait) {
+  input#demo_dummy {
+    width: 76vw;
+  }
+}
+@media (min-width: 576px) and (orientation:landscape) {
+  input#demo_dummy {
+    width: 26vw;
+  }
+}
+@media (min-width: 736px) and (orientation:landscape) {
+  input#demo_dummy {
+    width: 24vw;
+  }
+}
+@media (min-width: 768px) and (orientation:landscape) {
+    .col-md-4 {
+        // some properties
+    }
+}
+@media (min-width: 768px) and (orientation:portrait) {
+  input#demo_dummy {
+    width: 34vw;
+  }
+}
+@media (min-width: 992px) and (orientation:landscape) {
+  input#demo_dummy {
+    width: 21vw;
+  }
+}
+@media (min-width: 992px) and (orientation:portrait) {
+  input#demo_dummy {
+    width: 22vw;
+  }
+}
