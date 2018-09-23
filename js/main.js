@@ -18,6 +18,17 @@ $( document ).ready(function() {
   });
 
   $( "#fist_step_reg" ).submit(function( event ) {
+    if ( $("#passwperson").val() != $("#confirmPasswPerson").val() )
+    {
+      $(".fieldError").addClass("fieldError_active");
+      event.preventDefault();
+      return;
+    }
+    else
+    {
+      $(".fieldError").removeClass("fieldError_active");
+    }
+
     $("#fist_step_reg").hide();
     $("#sendSecondStepReg").attr("disabled", false);
     event.preventDefault();
